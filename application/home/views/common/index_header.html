@@ -1,7 +1,7 @@
 <div class="header">
     <div class="container">
         <div class="header-logo">
-            <a href="index.html"><img src="<?php echo __HOME_IMAGES__;?>logo.png" alt="logo"/></a>
+            <a href="index.html"><img src="<{$smarty.const.__HOME_IMAGES__}>logo.png" alt="logo"/></a>
         </div>
         <div class="header-info">
             <p>Information Service:</p>
@@ -14,7 +14,7 @@
     <div class="container">
         <!--top-nav-->
         <div class="top-nav cl-effect-5">
-            <span class="menu-icon"><img src="<?php echo __HOME_IMAGES__;?>menu-icon.png" alt=""/></span>
+            <span class="menu-icon"><img src="<{$smarty.const.__HOME_IMAGES__}>menu-icon.png" alt=""/></span>
             <ul class="nav1">
                 <li><a href="index.php"  <?php if(\core\Application::$action=='index') echo 'class="active"'; ?>>
                     <span data-hover="Home">Home</span></a>
