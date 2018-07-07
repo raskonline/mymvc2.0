@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="{$smarty.const.__HOME_CSS__}bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="{$smarty.const.__HOME_CSS__}style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Doctor Plus Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    {literal}
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    {/literal}
+    <!-- //Custom Theme files -->
+    <!-- js -->
+    <script src="{$smarty.const.__HOME_JS__}jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling-->
+    <script type="text/javascript" src="{$smarty.const.__HOME_JS__}move-top.js"></script>
+    <script type="text/javascript" src="{$smarty.const.__HOME_JS__}easing.js"></script>
+    {literal}
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    {/literal}
+    <!--//end-smoth-scrolling-->
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="header-logo">
+            <a href="index.html"><img src="{$smarty.const.__HOME_IMAGES__}logo.png" alt="logo"/></a>
+        </div>
+        <div class="header-info">
+            <p>Information Service:</p>
+            <h4>000-1234-1234</h4>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="header-bottom">
+    <div class="container">
+        <!--top-nav-->
+        <div class="top-nav cl-effect-5">
+            <span class="menu-icon"><img src="{$smarty.const.__HOME_IMAGES__}menu-icon.png" alt=""/></span>
+            <ul class="nav1">
+                <li><a href="index.php"  {if (\core\Application::$action=='index')} class="active"{/if}>
+                    <span data-hover="Home">Home</span></a>
+                </li>
+                <li><a href="index.php?g=home&c=index&a=about" {if (\core\Application::$action=='about')} class="active" {/if}> <span data-hover="About">About</span></a></li>
+                <li><a href="index.php?g=home&c=index&a=services" {if (\core\Application::$action=='services')} class="active"{/if}> <span data-hover="Services">Services</span></a></li>
+                <li><a href="index.php?g=home&c=index&a=news" {if (\core\Application::$action=='news')} class="active" {/if}> <span data-hover="News">News</span></a></li>
+                <li><a href="index.php?g=home&c=index&a=contact" {if (\core\Application::$action=='contact')} class="active" {/if}> <span data-hover="Contact">Contact</span></a></li>
+                <li><a href="index.php?g=home&c=user&a=index"> <span data-hover="User">User</span></a></li>
+                <li><a href="index.php?g=admin&c=login&a=index"> <span data-hover="Admin">Admin</span></a></li>
+            </ul>
+            <!-- script-for-menu -->
+            <script>
+                $( "span.menu-icon" ).click(function() {
+                    $( "ul.nav1" ).slideToggle( 300, function() {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- /script-for-menu -->
+        </div>
+        <!--//top-nav-->
+        <form class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button type="submit" class="btn btn-default"></button>
+            </div>
+        </form>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+
+{block name="mainmiddle"}
+{/block}
+
+
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-4 recent-posts">
+                <h4>Recent posts</h4>
+                <div class="recent-posts-text">
+                    <h5>MARCH 30, 2015</h5>
+                    <p>Duis autem vel eum iriure dolor</p>
+                </div>
+                <div class="recent-posts-text">
+                    <h5>MARCH 15, 2015</h5>
+                    <p>Duis autem vel eum iriure dolor</p>
+                </div>
+                <div class="recent-posts-text">
+                    <h5>MARCH 3, 2015</h5>
+                    <p>Duis autem vel eum iriure dolor</p>
+                </div>
+            </div>
+            <div class="col-md-4 recent-posts">
+                <h4>Twiter feeds</h4>
+                <div class="recent-posts-text">
+                    <h5>about 2 days ago<span>@kristit</span></h5>
+                    <p>Good work buddy</p>
+                </div>
+                <div class="recent-posts-text">
+                    <h5>about 2 days ago <span>@fasteven</span></h5>
+                    <p>Good work buddy</p>
+                </div>
+                <div class="recent-posts-text">
+                    <h5>about 2 days ago <span>@streamer</span> </h5>
+                    <p>Good work buddy</p>
+                </div>
+            </div>
+            <div class="col-md-4 recent-posts">
+                <h4>Our address</h4>
+                <p class="adrs">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+                    facilisi Nam liber tempor cum soluta </p>
+                <ul>
+                    <li><span></span>Moonshine St. 14/05 Light, Japan</li>
+                    <li><span class="ph-no"></span>+00 (123) 111 11 11</li>
+                    <li><span class="mail"></span><a href="mailto:example@mail.com">mail@example.com</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <p>Copyright &copy; 2018.宇宙科技公司 <a href="#" target="_blank" title="#">治愈系</a> - Collect from <a href="#" title="#" target="_blank">包治百病</a></p>
+    </div>
+</div>
+
+{literal}
+<!--smooth-scrolling-of-move-up-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+{/literal}
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!--//smooth-scrolling-of-move-up-->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{$smarty.const.__HOME_JS__}bootstrap.js"> </script>
+</body>
+</html>

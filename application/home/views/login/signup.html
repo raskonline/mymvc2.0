@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SignUp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?php echo __LOGIN_CSS__;?>bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo __LOGIN_CSS__;?>animate.css">
-    <link rel="stylesheet" href="<?php echo __LOGIN_CSS__;?>style.css">
+    <link rel="stylesheet" href="{$smarty.const.__LOGIN_CSS__}bootstrap.min.css">
+    <link rel="stylesheet" href="{$smarty.const.__LOGIN_CSS__}animate.css">
+    <link rel="stylesheet" href="{$smarty.const.__LOGIN_CSS__}style.css">
 </head>
 <body>
 <div class="container">
@@ -66,16 +66,17 @@
 </div>
 
 <!-- jQuery -->
-<script src="<?php echo __LOGIN_JS__;?>jquery.min.js"></script>
+<script src="{$smarty.const.__LOGIN_JS__}jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="<?php echo __LOGIN_JS__;?>bootstrap.min.js"></script>
+<script src="{$smarty.const.__LOGIN_JS__}bootstrap.min.js"></script>
 <!-- Placeholder -->
-<script src="<?php echo __LOGIN_JS__;?>jquery.placeholder.min.js"></script>
+<script src="{$smarty.const.__LOGIN_JS__}jquery.placeholder.min.js"></script>
 <!-- Waypoints -->
-<script src="<?php echo __LOGIN_JS__;?>jquery.waypoints.min.js"></script>
+<script src="{$smarty.const.__LOGIN_JS__}jquery.waypoints.min.js"></script>
 <!-- Main JS -->
-<script src="<?php echo __LOGIN_JS__;?>main.js"></script>
+<script src="{$smarty.const.__LOGIN_JS__}main.js"></script>
 
+{literal}
 <!--表单ajax提交-->
 <script type="text/javascript">
 
@@ -163,6 +164,7 @@
         });
     })
 </script>
+{/literal}
 
 </body>
 </html>
