@@ -1,6 +1,6 @@
 <?php
 //定义服务器默认URL
-define("SERVER_URL","http://".$_SERVER['SERVER_NAME']."/mymvc1.0/");
+define("SERVER_URL","http://".$_SERVER['SERVER_NAME']."/mymvc2.0/");
 
 //定义前台静态资源常量
 define("__HOME__","public/home/");

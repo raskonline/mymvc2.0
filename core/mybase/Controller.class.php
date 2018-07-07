@@ -52,8 +52,8 @@ class Controller
         //设置混编文件路径
         $this->smarty->setCompileDir("runtime/" . Application::$group . "/" . strtolower(Application::$controller) . "/");
         //设置分隔符
-        $this->smarty->setLeftDelimiter("<{");
-        $this->smarty->setRightDelimiter("}>");
+        //$this->smarty->setLeftDelimiter("<{");
+        //$this->smarty->setRightDelimiter("}>");
         //或者把js或者css代码放在{literal}{/literal}之间
     }
 }
